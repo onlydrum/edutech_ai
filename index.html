@@ -40,6 +40,16 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        
+        /* 추가 및 수정된 부분: 소개와 연락처의 p 태그 간격을 리스트처럼 제거 */
+        .container p {
+            margin: 0; 
+        }
+        /* 제목 아래에는 약간의 간격을 주어 가독성 유지 */
+        .container h2 {
+            margin-bottom: 10px;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -79,7 +89,6 @@
         <p>서울사이버대학교 실용음악과에서 학생들을 지도하며, 연주, 교육, 콘텐츠 제작을 함께 이어가고 있습니다.</p>
         <p>AI와 에듀테크를 음악교육에 접목해, 학습자에게 실용적인 피드백을 제공하는 방법에 관심이 많습니다.</p>
         <p>현장 경험과 연구 결과를 연결해 '배우기 쉬운 음악교육'의 실현을 목표로 하고 있습니다.</p>
-
     </div>
 
     <div class="container" id="projects">
@@ -109,6 +118,4 @@
     </footer>
 
 </body>
-</html>"""
-
-HTML(html_content)
+</html>
