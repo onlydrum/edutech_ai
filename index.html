@@ -48,29 +48,25 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
 
-        /* [수정] 소개 섹션 레이아웃: 사진을 아래 두 문장 옆으로 배치 */
+        /* 소개 섹션 레이아웃: 4개 문장 전체와 사진을 나란히 배치 */
         .intro-container {
             position: relative;
         }
-        .intro-upper-text {
-            margin-bottom: 0;
-        }
         .intro-lower-wrapper {
             display: flex;
-            align-items: center; /* 수직 중앙 정렬 */
-            gap: 10px;
+            align-items: center; /* 수직 중앙 정렬 - 사진이 4개 문장 중앙에 오게 함 */
+            gap: 20px;
         }
         .intro-lower-text {
             flex: 1;
         }
         .main-photo {
-            width: 130px; /* 130으로 축소 */
+            width: 130px; 
             height: auto;
             border-radius: 4px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             object-fit: cover;
             display: block;
-            margin-top: 13px; /* 사진을 13픽셀 아래로 내림 */
         }
         #about p, #contact p {
             margin-top: 0;
@@ -118,7 +114,7 @@
 
         @media (max-width: 600px) {
             .intro-lower-wrapper {
-                flex-direction: row; /* 모바일에서도 작아서 가로 유지 가능 */
+                flex-direction: row; 
             }
         }
     </style>
@@ -140,11 +136,9 @@
     <div class="container" id="about">
         <h2>소개</h2>
         <div class="intro-container">
-            <div class="intro-upper-text">
-                <p>안녕하세요, 조성민입니다.</p>
-            </div>
             <div class="intro-lower-wrapper">
                 <div class="intro-lower-text">
+                    <p>안녕하세요, 조성민입니다.</p>
                     <p>서울사이버대학교 실용음악과에서 학생들을 지도하며, 연주, 교육, 콘텐츠 제작을 함께 이어가고 있습니다.</p>
                     <p>AI와 에듀테크를 음악교육에 접목해, 학습자에게 효과적이고 효율적인 음악교육 제공하고자 합니다. </p>
                     <p>현장 경험과 연구 결과를 연결해 '배우기 쉬운 음악교육'의 실현을 목표로 하고 있습니다.</p>
